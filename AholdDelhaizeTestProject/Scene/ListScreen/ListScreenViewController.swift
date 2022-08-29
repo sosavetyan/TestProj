@@ -28,7 +28,7 @@ class ListScreenViewController: UIViewController, ListScreenDisplayLogic {
     
     lazy var collectionView: UICollectionView = {
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 350, height: 150)
+        layout.itemSize = CGSize(width: 350, height: 300)
         var collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .clear
@@ -86,7 +86,9 @@ class ListScreenViewController: UIViewController, ListScreenDisplayLogic {
 }
 
 extension ListScreenViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        router?.navigateToDetails(title: items[indexPath.row].labelText, description: items[indexPath.row].desc)
+    }
 }
 
 extension ListScreenViewController: UICollectionViewDataSource {

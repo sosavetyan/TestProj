@@ -12,7 +12,7 @@ struct CollectionAPI: Codable {
     let artObjects: [ArtObjectAPI]
     
     func makeDomainModel() -> [CollectionDomain] {
-        let collectionDomain = artObjects.compactMap({ CollectionDomain(labelText: $0.longTitle, imageURL: $0.webImage.url)})
+        let collectionDomain = artObjects.compactMap({ CollectionDomain(labelText: $0.title, imageURL: $0.webImage.url, description: $0.longTitle)})
         return collectionDomain
     }
 }
@@ -24,23 +24,6 @@ struct ArtObjectAPI: Codable {
     let title: String
     let longTitle: String
     let webImage: WebImageAPI
-}
-
-struct PrincipalMakerAPI: Codable {
-    let name: String
-    let unFixedName: String
-    let placeOfBirth: String
-    let dateOfBirth: String
-    let dateOfBirthPrecision: String?
-    let dateOfDeath: String
-    let dateOfDeathPrecision: String?
-    let placeOfDeath: String
-    let occupation: [String]
-    let roles: [String]
-    let nationality: String
-    let biography: String
-    let productionPlaces: [String]
-    let qualification: String?
 }
 
 struct ColorNormilizationAPI: Codable {

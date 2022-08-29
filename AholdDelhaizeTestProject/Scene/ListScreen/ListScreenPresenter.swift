@@ -17,7 +17,7 @@ class ListScreenPresenter: ListScreenPresentationLogic
     
     func presentItems(response: ListScreen.UseCase.Response) {
         var viewModel = ListScreen.UseCase.ViewModel()
-        viewModel.items = response.items.compactMap({ CollectionUI(labelText: $0.labelText, imageURL: $0.imageURL)})
+        viewModel.items = response.items.compactMap({ CollectionUI(labelText: $0.labelText, imageURL: $0.imageURL, desc: $0.description)})
         viewController?.displayItems(viewMode: viewModel)
     }
     

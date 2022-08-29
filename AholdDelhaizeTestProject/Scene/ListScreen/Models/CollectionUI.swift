@@ -11,4 +11,5 @@ import Foundation
 struct CollectionUI {
     let labelText: String
     let imageURL: String
+    let desc: String
 }
