@@ -16,8 +16,6 @@
 		67E600CC28ACAED000429F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67E600CB28ACAED000429F86 /* Assets.xcassets */; };
 		67E600CF28ACAED000429F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67E600CD28ACAED000429F86 /* LaunchScreen.storyboard */; };
 		67E600DA28ACAED100429F86 /* AholdDelhaizeTestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E600D928ACAED100429F86 /* AholdDelhaizeTestProjectTests.swift */; };
-		67E600E428ACAED100429F86 /* AholdDelhaizeTestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E600E328ACAED100429F86 /* AholdDelhaizeTestProjectUITests.swift */; };
-		67E600E628ACAED100429F86 /* AholdDelhaizeTestProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E600E528ACAED100429F86 /* AholdDelhaizeTestProjectUITestsLaunchTests.swift */; };
 		67E600F928ACAF0400429F86 /* ListScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E600F328ACAF0400429F86 /* ListScreenPresenter.swift */; };
 		67E600FA28ACAF0400429F86 /* ListScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E600F328ACAF0400429F86 /* ListScreenPresenter.swift */; };
 		67E600FB28ACAF0400429F86 /* ListScreenWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E600F428ACAF0400429F86 /* ListScreenWorker.swift */; };
@@ -34,8 +32,6 @@
 		67E6010828ACAFC900429F86 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6010628ACAFC900429F86 /* AppConstants.swift */; };
 		67E6010E28ACB09000429F86 /* NetworkRequestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6010D28ACB09000429F86 /* NetworkRequestAPIClient.swift */; };
 		67E6010F28ACB09000429F86 /* NetworkRequestAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6010D28ACB09000429F86 /* NetworkRequestAPIClient.swift */; };
-		67E6011128ACB22900429F86 /* AppInternalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6011028ACB22900429F86 /* AppInternalWorker.swift */; };
-		67E6011228ACB22900429F86 /* AppInternalWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6011028ACB22900429F86 /* AppInternalWorker.swift */; };
 		67E6011528ACB2A400429F86 /* CollectionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6011428ACB2A400429F86 /* CollectionAPI.swift */; };
 		67E6011628ACB2A400429F86 /* CollectionAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6011428ACB2A400429F86 /* CollectionAPI.swift */; };
 		67E6011828ACF45D00429F86 /* CollectionUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E6011728ACF45D00429F86 /* CollectionUI.swift */; };
@@ -49,13 +45,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		67E600D628ACAED100429F86 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 67E600B728ACAECD00429F86 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 67E600BE28ACAECD00429F86;
-			remoteInfo = AholdDelhaizeTestProject;
-		};
-		67E600E028ACAED100429F86 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 67E600B728ACAECD00429F86 /* Project object */;
 			proxyType = 1;
@@ -77,9 +66,6 @@
 		67E600D028ACAED000429F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67E600D528ACAED100429F86 /* AholdDelhaizeTestProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AholdDelhaizeTestProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67E600D928ACAED100429F86 /* AholdDelhaizeTestProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AholdDelhaizeTestProjectTests.swift; sourceTree = "<group>"; };
-		67E600DF28ACAED100429F86 /* AholdDelhaizeTestProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AholdDelhaizeTestProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		67E600E328ACAED100429F86 /* AholdDelhaizeTestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AholdDelhaizeTestProjectUITests.swift; sourceTree = "<group>"; };
-		67E600E528ACAED100429F86 /* AholdDelhaizeTestProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AholdDelhaizeTestProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		67E600F328ACAF0400429F86 /* ListScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenPresenter.swift; sourceTree = "<group>"; };
 		67E600F428ACAF0400429F86 /* ListScreenWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenWorker.swift; sourceTree = "<group>"; };
 		67E600F528ACAF0400429F86 /* ListScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenRouter.swift; sourceTree = "<group>"; };
@@ -88,7 +74,6 @@
 		67E600F828ACAF0400429F86 /* ListScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenInteractor.swift; sourceTree = "<group>"; };
 		67E6010628ACAFC900429F86 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		67E6010D28ACB09000429F86 /* NetworkRequestAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestAPIClient.swift; sourceTree = "<group>"; };
-		67E6011028ACB22900429F86 /* AppInternalWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInternalWorker.swift; sourceTree = "<group>"; };
 		67E6011428ACB2A400429F86 /* CollectionAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionAPI.swift; sourceTree = "<group>"; };
 		67E6011728ACF45D00429F86 /* CollectionUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionUI.swift; sourceTree = "<group>"; };
 		67E6011B28ACF4CF00429F86 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -109,13 +94,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67E600DC28ACAED100429F86 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,7 +102,6 @@
 			children = (
 				67E600C128ACAECD00429F86 /* AholdDelhaizeTestProject */,
 				67E600D828ACAED100429F86 /* AholdDelhaizeTestProjectTests */,
-				67E600E228ACAED100429F86 /* AholdDelhaizeTestProjectUITests */,
 				67E600C028ACAECD00429F86 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,7 +111,6 @@
 			children = (
 				67E600BF28ACAECD00429F86 /* AholdDelhaizeTestProject.app */,
 				67E600D528ACAED100429F86 /* AholdDelhaizeTestProjectTests.xctest */,
-				67E600DF28ACAED100429F86 /* AholdDelhaizeTestProjectUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -162,15 +138,6 @@
 			path = AholdDelhaizeTestProjectTests;
 			sourceTree = "<group>";
 		};
-		67E600E228ACAED100429F86 /* AholdDelhaizeTestProjectUITests */ = {
-			isa = PBXGroup;
-			children = (
-				67E600E328ACAED100429F86 /* AholdDelhaizeTestProjectUITests.swift */,
-				67E600E528ACAED100429F86 /* AholdDelhaizeTestProjectUITestsLaunchTests.swift */,
-			);
-			path = AholdDelhaizeTestProjectUITests;
-			sourceTree = "<group>";
-		};
 		67E600F228ACAEE000429F86 /* ListScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +158,6 @@
 			children = (
 				67E6010628ACAFC900429F86 /* AppConstants.swift */,
 				67E6010D28ACB09000429F86 /* NetworkRequestAPIClient.swift */,
-				67E6011028ACB22900429F86 /* AppInternalWorker.swift */,
 				67DA6A1D28AE582D00DAEE9B /* ImageLoader.swift */,
 				67DA6A1F28AE653A00DAEE9B /* Generator.swift */,
 			);
@@ -254,24 +220,6 @@
 			productReference = 67E600D528ACAED100429F86 /* AholdDelhaizeTestProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		67E600DE28ACAED100429F86 /* AholdDelhaizeTestProjectUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 67E600EF28ACAED100429F86 /* Build configuration list for PBXNativeTarget "AholdDelhaizeTestProjectUITests" */;
-			buildPhases = (
-				67E600DB28ACAED100429F86 /* Sources */,
-				67E600DC28ACAED100429F86 /* Frameworks */,
-				67E600DD28ACAED100429F86 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				67E600E128ACAED100429F86 /* PBXTargetDependency */,
-			);
-			name = AholdDelhaizeTestProjectUITests;
-			productName = AholdDelhaizeTestProjectUITests;
-			productReference = 67E600DF28ACAED100429F86 /* AholdDelhaizeTestProjectUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -286,10 +234,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					67E600D428ACAED100429F86 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 67E600BE28ACAECD00429F86;
-					};
-					67E600DE28ACAED100429F86 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 67E600BE28ACAECD00429F86;
 					};
@@ -310,7 +254,6 @@
 			targets = (
 				67E600BE28ACAECD00429F86 /* AholdDelhaizeTestProject */,
 				67E600D428ACAED100429F86 /* AholdDelhaizeTestProjectTests */,
-				67E600DE28ACAED100429F86 /* AholdDelhaizeTestProjectUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,13 +276,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67E600DD28ACAED100429F86 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -350,7 +286,6 @@
 				67E6010E28ACB09000429F86 /* NetworkRequestAPIClient.swift in Sources */,
 				67E600C328ACAECD00429F86 /* AppDelegate.swift in Sources */,
 				67E6010728ACAFC900429F86 /* AppConstants.swift in Sources */,
-				67E6011128ACB22900429F86 /* AppInternalWorker.swift in Sources */,
 				67E600F928ACAF0400429F86 /* ListScreenPresenter.swift in Sources */,
 				67DA6A1C28AE56F500DAEE9B /* CollectionDomain.swift in Sources */,
 				67DA6A1E28AE582D00DAEE9B /* ImageLoader.swift in Sources */,
@@ -373,7 +308,6 @@
 			files = (
 				67E600FA28ACAF0400429F86 /* ListScreenPresenter.swift in Sources */,
 				67E600FC28ACAF0400429F86 /* ListScreenWorker.swift in Sources */,
-				67E6011228ACB22900429F86 /* AppInternalWorker.swift in Sources */,
 				67E6010228ACAF0400429F86 /* ListScreenViewController.swift in Sources */,
 				67E6010828ACAFC900429F86 /* AppConstants.swift in Sources */,
 				67E600FE28ACAF0400429F86 /* ListScreenRouter.swift in Sources */,
@@ -390,15 +324,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		67E600DB28ACAED100429F86 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67E600E428ACAED100429F86 /* AholdDelhaizeTestProjectUITests.swift in Sources */,
-				67E600E628ACAED100429F86 /* AholdDelhaizeTestProjectUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -406,11 +331,6 @@
 			isa = PBXTargetDependency;
 			target = 67E600BE28ACAECD00429F86 /* AholdDelhaizeTestProject */;
 			targetProxy = 67E600D628ACAED100429F86 /* PBXContainerItemProxy */;
-		};
-		67E600E128ACAED100429F86 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 67E600BE28ACAECD00429F86 /* AholdDelhaizeTestProject */;
-			targetProxy = 67E600E028ACAED100429F86 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -644,42 +564,6 @@
 			};
 			name = Release;
 		};
-		67E600F028ACAED100429F86 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 882Y7347Y5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sosavetyan.AholdDelhaizeTestProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AholdDelhaizeTestProject;
-			};
-			name = Debug;
-		};
-		67E600F128ACAED100429F86 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 882Y7347Y5;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sosavetyan.AholdDelhaizeTestProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AholdDelhaizeTestProject;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -706,15 +590,6 @@
 			buildConfigurations = (
 				67E600ED28ACAED100429F86 /* Debug */,
 				67E600EE28ACAED100429F86 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		67E600EF28ACAED100429F86 /* Build configuration list for PBXNativeTarget "AholdDelhaizeTestProjectUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				67E600F028ACAED100429F86 /* Debug */,
-				67E600F128ACAED100429F86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

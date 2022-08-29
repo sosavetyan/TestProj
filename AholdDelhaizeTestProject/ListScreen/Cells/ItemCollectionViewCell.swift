@@ -24,10 +24,12 @@ class ItemCollectionViewCell: UICollectionViewCell {
     
     private func makeImageViewContraints() {
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
-        avatarImageView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-        avatarImageView.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        avatarImageView.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
-        avatarImageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        NSLayoutConstraint.activate([
+            avatarImageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 0.0),
+            avatarImageView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 0.0),
+            avatarImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 0.0),
+            avatarImageView.heightAnchor.constraint(equalToConstant: 50.0)
+        ])
     }
     
     func displayItem(item: CollectionUI) {

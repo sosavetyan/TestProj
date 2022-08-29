@@ -27,15 +27,15 @@ class ListScreenInteractor: ListScreenBusinessLogic, ListScreenDataStore {
             return
         }
         worker = ListScreenWorker()
-        worker?.getItems({ [self] items in
+        worker?.getItems({ items in
             self.items = items.makeDomainModel()
             if self.items.count == 0 {
-                lastItems = getPageItems(page: page, allItems: self.items)
-                response.items = lastItems
-                page += 1
+                self.lastItems = self.getPageItems(page: self.page, allItems: self.items)
+                response.items = self.lastItems
+                self.page += 1
             } else {
-                lastItems.append(contentsOf: getPageItems(page: page, allItems: self.items))
-                response.items = lastItems
+                self.lastItems.append(contentsOf: self.getPageItems(page: self.page, allItems: self.items))
+                response.items = self.lastItems
             }
             self.presenter?.presentItems(response: response)
         }, { error in

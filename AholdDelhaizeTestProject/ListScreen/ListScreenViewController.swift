@@ -14,7 +14,7 @@ class ListScreenViewController: UIViewController, ListScreenDisplayLogic {
     var interactor: ListScreenBusinessLogic?
     var router: (NSObjectProtocol & ListScreenRoutingLogic & ListScreenDataPassing)?
     private var items = [CollectionUI]()
-    // MARK: Object lifecycle
+    
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -27,18 +27,13 @@ class ListScreenViewController: UIViewController, ListScreenDisplayLogic {
     }
     
     lazy var collectionView: UICollectionView = {
-        let reuseId = String(describing: ItemCollectionViewCell.self)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        layout.itemSize = CGSize(width: 60, height: 60)
+        layout.itemSize = CGSize(width: 100, height: 100)
         var collectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .clear
         return collectionView
     }()
-                                              
-                                            
-    
-    // MARK: Setup
     
     private func setup() {
         let viewController = self
@@ -53,8 +48,6 @@ class ListScreenViewController: UIViewController, ListScreenDisplayLogic {
         router.dataStore = interactor
     }
     
-    // MARK: Routing
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let scene = segue.identifier {
             let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
@@ -63,9 +56,7 @@ class ListScreenViewController: UIViewController, ListScreenDisplayLogic {
             }
         }
     }
-    
-    // MARK: View lifecycle
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionsView()
