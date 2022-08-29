@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		674414DF28BD3DEB004C84B3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674414DE28BD3DEB004C84B3 /* CustomImageView.swift */; };
 		67DA6A1C28AE56F500DAEE9B /* CollectionDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA6A1B28AE56F500DAEE9B /* CollectionDomain.swift */; };
 		67DA6A1E28AE582D00DAEE9B /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA6A1D28AE582D00DAEE9B /* ImageLoader.swift */; };
 		67DA6A2028AE653A00DAEE9B /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DA6A1F28AE653A00DAEE9B /* Generator.swift */; };
@@ -54,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		674414DE28BD3DEB004C84B3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		67DA6A1B28AE56F500DAEE9B /* CollectionDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDomain.swift; sourceTree = "<group>"; };
 		67DA6A1D28AE582D00DAEE9B /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		67DA6A1F28AE653A00DAEE9B /* Generator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generator.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				67E6010D28ACB09000429F86 /* NetworkRequestAPIClient.swift */,
 				67DA6A1D28AE582D00DAEE9B /* ImageLoader.swift */,
 				67DA6A1F28AE653A00DAEE9B /* Generator.swift */,
+				674414DE28BD3DEB004C84B3 /* CustomImageView.swift */,
 			);
 			path = Utlis;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				67E600FD28ACAF0400429F86 /* ListScreenRouter.swift in Sources */,
 				67E600FB28ACAF0400429F86 /* ListScreenWorker.swift in Sources */,
 				67E600FF28ACAF0400429F86 /* ListScreenModels.swift in Sources */,
+				674414DF28BD3DEB004C84B3 /* CustomImageView.swift in Sources */,
 				67E6011C28ACF4CF00429F86 /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

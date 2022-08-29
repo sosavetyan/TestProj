@@ -8,32 +8,37 @@
 import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
-    private var avatarImageView: UIImageView = {
-        var avatarView = UIImageView()
+    private var avatarImageView: CustomImageView = {
+        var avatarView = CustomImageView()
         avatarView.contentMode = .scaleAspectFit
+
         return avatarView
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        avatarImageView = UIImageView()
+        avatarImageView = CustomImageView()
         contentView.backgroundColor = .white
         contentView.addSubview(avatarImageView)
+        avatarImageView.contentMode = .scaleAspectFill
+        avatarImageView.clipsToBounds = true
+        avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         makeImageViewContraints()
     }
     
     private func makeImageViewContraints() {
-        avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             avatarImageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 0.0),
             avatarImageView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 0.0),
             avatarImageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 0.0),
-            avatarImageView.heightAnchor.constraint(equalToConstant: 50.0)
+            avatarImageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 0.0)
         ])
     }
     
     func displayItem(item: CollectionUI) {
-        avatarImageView.loadFrom(urlAddress: item.imageURL)
+        if let url = URL(string: item.imageURL) {
+            avatarImageView.loadImage(from: url)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -108,9 +108,13 @@ enum APIResult<Body> {
     case failure(FailureResponse<Body>)
 }
 
-struct APIClient {
-    
-    typealias APIClientCompletion = (APIResult<Data?>) -> Void
+protocol APIRequestItems {
+    func perform(_ request: APIRequest, _ completion: @escaping APIClientCompletion)
+}
+
+typealias APIClientCompletion = (APIResult<Data?>) -> Void
+
+struct APIClient:  APIRequestItems {
     
     private let session: URLSession
     
