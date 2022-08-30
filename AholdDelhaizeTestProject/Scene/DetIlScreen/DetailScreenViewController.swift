@@ -18,14 +18,14 @@ class DetailScreenViewController: UIViewController, DetailScreenDisplayLogic {
        let label = UILabel()
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.backgroundColor = .red
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
     private var descriptionLabel: UILabel = {
        let label = UILabel()
         label.numberOfLines = 0
-        label.backgroundColor = .red
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
     
@@ -71,9 +71,9 @@ class DetailScreenViewController: UIViewController, DetailScreenDisplayLogic {
         view.addSubview(descriptionLabel)
         view.backgroundColor = .white
         NSLayoutConstraint.activate([
-            pageTitleLabel.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 40.0),
-            pageTitleLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0.0),
-            pageTitleLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0.0),
+            pageTitleLabel.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 40.0),
+            pageTitleLabel.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 10.0),
+            pageTitleLabel.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 10.0),
             pageTitleLabel.heightAnchor.constraint(equalToConstant: 20.0),
             descriptionLabel.topAnchor.constraint(equalTo: self.pageTitleLabel.bottomAnchor, constant: 30),
             descriptionLabel.trailingAnchor.constraint(equalTo: self.pageTitleLabel.trailingAnchor),
